@@ -1,5 +1,56 @@
 *{
     padding:0;
     margin:0;
-    background-color: black;
+    background-color: beige;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+
+
+}
+.btn{
+    border:2px solid brown;
+    background-color: floralwhite;
+    border-radius: 2px;
+
+    height:100px;
+    width:100px;
+
+
+}
+.container{
+    border:2px solid cornflowerblue;
+    margin-left:80%;
+    
+}
+btn1{
+    height:50px;
+    width:5opx;
+}
+
+div{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+input{
+    height:30px;
+    width:80%;
+}
+form{
+    height:60vh;
+    width:60vh;
+    display:inline-flex;
+    font-size: larger;
+    flex-direction:column;
+
+  
+    gap:20px;
+    border-left: 10px solid salmon;
+    
 }
