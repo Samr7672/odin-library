@@ -15,14 +15,32 @@ function myBook(){
 
     const newBook= new book(author,title,status);
     myLibrary.push(newBook);
+    bookCard();
 
 }
-function bookCard{
+function bookCard(){
     const card=document.querySelector(".library-display");
     card. innerHTML=" ";
-    myLibrary.array.forEach((book) => {
+    myLibrary.forEach((book) => {
         const bookdiv=document.createElement("div")
         bookdiv.classList.add("card");
+        const  title= document.createElement("h3")
+        title.textContent=book.title;
+        const  author= document.createElement("h3")
+        author.textContent=book.author;
+        const btn3=document.createElement("button")
+        btn3.textContent="Remove";
+        btn3.dataset.id=book.id;
+        const btn4=document.createElement("button")
+        btn4.textContent="Status";
+        btn4.dataset.id=book.id;
+        bookdiv.appendChild(title);
+        bookdiv.appendChild(author);
+        bookdiv.appendChild(btn4);
+        bookdiv.appendChild(btn3);
+        card.appendChild(bookdiv);
+
+
         
 
         
